@@ -39,7 +39,7 @@ export class SidenavComponent implements OnInit {
   constructor(public router: Router) {}
 
   @HostListener('window:resize', ['$evnet'])
-  onResize(evnet: any) {
+  onResize(event: any) {
     this.screenWidth = window.innerWidth;
     if (this.screenWidth < 768) {
       this.collapsed = false;
