@@ -1,0 +1,13 @@
+<div class="ng-ribbon-card">
+  <span
+    class="ng-ribbon"
+    [ngClass]="{
+      'ng-ribbon-position-left': position === 'left',
+      'ng-ribbon-position-right': position !== 'left'
+    }">
+    <span class="ng-ribbon-text">{{ ribbonText }}</span>
+  </span>
+  <div class="ng-ribbon-card-content">
+    <ng-content></ng-content>
+  </div>
+</div>

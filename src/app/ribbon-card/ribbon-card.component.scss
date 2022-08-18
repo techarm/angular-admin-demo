@@ -1,0 +1,71 @@
+.ng-ribbon-card {
+  min-width: 200px;
+  min-height: 200px;
+  position: relative;
+  background-color: #fff;
+  background-size: cover;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0 4px 8px #d3e0e6;
+}
+
+.ng-ribbon {
+  position: absolute;
+  top: -6.1px;
+  color: white;
+}
+
+.ng-ribbon-position-left {
+  left: 10px;
+}
+
+.ng-ribbon-position-right {
+  right: 10px;
+}
+
+// .ng-ribbon::after {
+//   position: absolute;
+//   content: "";
+//   width: 0;
+//   height: 0;
+//   border-left: 53px solid transparent;
+//   border-right: 53px solid transparent;
+//   border-top: 10px solid #f8463f;
+// }
+
+.ng-ribbon .ng-ribbon-text {
+  position: relative;
+  display: block;
+  text-align: center;
+  background: #f8463f;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 10px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  min-width: 90px;
+}
+
+.ng-ribbon .ng-ribbon-text::before,
+.ng-ribbon .ng-ribbon-text::after {
+  position: absolute;
+  content: "";
+}
+
+.ng-ribbon .ng-ribbon-text::before {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+  background-color: #f8463f;
+}
+
+.ng-ribbon .ng-ribbon-text::after {
+  height: 6px;
+  width: 8px;
+  left: -8px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: #c4332e;
+}

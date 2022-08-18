@@ -10,3 +10,74 @@
   font-size: 25px;
   font-weight: 500;
 }
+
+// :host {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   padding: 25px;
+// }
+
+:host {
+  ::ng-deep {
+    .blue {
+      .ng-ribbon::after {
+        border-top: 10px solid #3fe3f8;
+      }
+
+      .ng-ribbon .ng-ribbon-text {
+        background-color: #3fe3f8 !important;
+      }
+
+      .ng-ribbon .ng-ribbon-text::before {
+        background-color: #3fe3f8 !important;
+      }
+
+      .ng-ribbon .ng-ribbon-text::after {
+        background-color: #2fa8b8 !important;
+      }
+    }
+
+    .green {
+      .ng-ribbon::after {
+        border-top: 10px solid #3ee359;
+      }
+
+      .ng-ribbon .ng-ribbon-text {
+        background-color: #3ee359 !important;
+      }
+
+      .ng-ribbon .ng-ribbon-text::before {
+        background-color: #3ee359 !important;
+      }
+
+      .ng-ribbon .ng-ribbon-text::after {
+        background-color: #29aa3f !important;
+      }
+    }
+  }
+}
+
+.card-text {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mr-45 {
+  margin-right: 45px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}

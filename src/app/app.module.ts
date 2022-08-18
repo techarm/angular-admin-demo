@@ -16,6 +16,7 @@ import { StatisticsComponent } from './statistics/statistics.component';
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { FlipCardModule } from './flip-card/flip-card.module';
+import { RibbonCardModule } from './ribbon-card/ribbon-card.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,15 @@ import { FlipCardModule } from './flip-card/flip-card.module';
     SublevelMenuComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, OverlayModule, CdkMenuModule, FlipCardModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    OverlayModule,
+    CdkMenuModule,
+    FlipCardModule,
+    RibbonCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

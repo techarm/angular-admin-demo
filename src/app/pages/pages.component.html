@@ -11,3 +11,58 @@
     <p class="card-title">This is card back</p>
   </flip-card-back>
 </flip-card>
+
+<br />
+<br />
+<h2 class="mt-45">Ribbon Card</h2>
+<div class="row">
+  <div class="container mr-45 mt-45">
+    <app-ribbon-card [ribbonText]="'Intermediate'">
+      <div class="card-text">John Doe</div>
+    </app-ribbon-card>
+  </div>
+  <div class="container mr-45 mt-45">
+    <app-ribbon-card [ribbonText]="'Elite'">
+      <div class="card-text">John Doe</div>
+    </app-ribbon-card>
+  </div>
+  <div class="container mr-45 mt-45">
+    <app-ribbon-card [ribbonText]="'Master'">
+      <div class="card-text">Mark Dope</div>
+    </app-ribbon-card>
+  </div>
+</div>
+<div class="row">
+  <div class="container mr-45 mt-45 blue">
+    <app-ribbon-card [ribbonText]="'Intermediate'" [position]="'right'">
+      <div class="card-text">John Doe</div>
+    </app-ribbon-card>
+  </div>
+  <div class="container mr-45 mt-45 blue">
+    <app-ribbon-card [ribbonText]="'Elite'" [position]="'right'">
+      <div class="card-text">John Doe</div>
+    </app-ribbon-card>
+  </div>
+  <div class="container mr-45 mt-45 blue">
+    <app-ribbon-card [ribbonText]="'Master'" [position]="'right'">
+      <div class="card-text">Mark Dope</div>
+    </app-ribbon-card>
+  </div>
+</div>
+<div class="row">
+  <div class="container mr-45 mt-45 green">
+    <app-ribbon-card [ribbonText]="'Cashback 10%'" [position]="'right'">
+      <div class="card-text">John Doe</div>
+    </app-ribbon-card>
+  </div>
+  <div class="container mr-45 mt-45 green">
+    <app-ribbon-card [ribbonText]="'Cashback 20%'" [position]="'left'">
+      <div class="card-text">John Doe</div>
+    </app-ribbon-card>
+  </div>
+  <div class="container mr-45 mt-45 green">
+    <app-ribbon-card [ribbonText]="'Cashback 30%'" [position]="'right'">
+      <div class="card-text">Mark Dope</div>
+    </app-ribbon-card>
+  </div>
+</div>
