@@ -1,8 +1,113 @@
-<h1>Dashboard</h1>
+<!-- <h1>Dashboard</h1>
 <div class="card">
   <div class="card-head">Lorem ipsum - Dashboard</div>
   <div class="card-body">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque harum, vero veniam aspernatur, optio, nemo culpa
     maxime dolores eum ex quaerat quia vel aut. Vero incidunt ullam modi qui repellendus?
+  </div>
+</div> -->
+
+<h2>Dashboard</h2>
+
+<div [ngClass]="getClass()">
+  <div class="col-left">
+    <div class="card welcome-card">
+      <div class="card-head welcome-head-container">
+        <div class="col-left">
+          <div>Welcome Back !</div>
+          <p>Angular Dashboard</p>
+        </div>
+        <div class="col-right">
+          <img [src]="'assets/profile-bg-3.png'" alt="profile" />
+        </div>
+      </div>
+      <div class="card-body welcome-body-container">
+        <div class="col-left">
+          <div class="avatar">
+            <img [src]="'assets/user3.jpg'" alt="avatar" />
+          </div>
+          <div class="name">John Doe</div>
+          <p>Web Developer</p>
+        </div>
+        <div class="col-right">
+          <div class="performance-container">
+            <div class="performance">
+              <div>Performance</div>
+              <div>80%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="view-profile">
+            <button>
+              View Profile
+              <i class="far fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col task-col">
+    <div class="task">
+      <span class="bar completed"></span>
+      <div class="details">
+        <div>Completed</div>
+        <p>6 tasks</p>
+      </div>
+      <i class="far fa-pen edit"></i>
+    </div>
+    <div class="task">
+      <span class="bar active"></span>
+      <div class="details">
+        <div>Active</div>
+        <p>1 tasks</p>
+      </div>
+      <i class="far fa-pen edit"></i>
+    </div>
+    <div class="task">
+      <span class="bar new"></span>
+      <div class="details">
+        <div>Assigned</div>
+        <p>12 tasks</p>
+      </div>
+      <i class="far fa-pen edit"></i>
+    </div>
+    <button>
+      <i class="far fa-plus"></i>
+      Create New Group
+    </button>
+  </div>
+</div>
+
+<br />
+<br />
+<div class="card">
+  <div class="card-head">Lorem ipsum - dashboard</div>
+  <div class="card-body">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est laborum magnam, ipsa praesentium quis natus libero
+    ex deleniti delectus provident perferendis, in sed vitae? Itaque, maiores. Sunt, autem quidem? Lorem ipsum dolor,
+    sit amet consectetur adipisicing elit. Magni eveniet voluptates explicabo est suscipit incidunt deserunt architecto
+    repellendus, commodi mollitia adipisci consequatur dolor iure beatae voluptas cumque exercitationem! Obcaecati,
+    aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur non nobis laboriosam illum vitae, fuga
+    natus dolorem, pariatur obcaecati incidunt adipisci voluptatem reprehenderit consequatur, officiis minus explicabo
+    laborum saepe dignissimos?
+  </div>
+</div>
+
+<br />
+<br />
+<div class="card">
+  <div class="card-head">Lorem ipsum - dashboard</div>
+  <div class="card-body">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est laborum magnam, ipsa praesentium quis natus libero
+    ex deleniti delectus provident perferendis, in sed vitae? Itaque, maiores. Sunt, autem quidem? Lorem ipsum dolor,
+    sit amet consectetur adipisicing elit. Magni eveniet voluptates explicabo est suscipit incidunt deserunt architecto
+    repellendus, commodi mollitia adipisci consequatur dolor iure beatae voluptas cumque exercitationem! Obcaecati,
+    aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur non nobis laboriosam illum vitae, fuga
+    natus dolorem, pariatur obcaecati incidunt adipisci voluptatem reprehenderit consequatur, officiis minus explicabo
+    laborum saepe dignissimos?
   </div>
 </div>
